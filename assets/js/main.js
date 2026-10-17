@@ -135,13 +135,9 @@ function scrollToSection(target) {
 
   cancelAnimationFrame(scrollAnimationFrame);
   document.documentElement.style.scrollBehavior = 'auto';
-  if (motionPreference.matches) {
-    window.scrollTo(0, targetY);
-    document.documentElement.style.removeProperty('scroll-behavior');
-    focusSection(target);
-    return;
-  }
-  const duration = Math.min(2000, Math.max(1300, Math.abs(distance) * .42));
+  const duration = motionPreference.matches
+    ? Math.min(520, Math.max(360, Math.abs(distance) * .18))
+    : Math.min(1250, Math.max(760, Math.abs(distance) * .32));
   const startTime = performance.now();
   const easeInOutCubic = progress => progress < .5
     ? 4 * Math.pow(progress, 3)
