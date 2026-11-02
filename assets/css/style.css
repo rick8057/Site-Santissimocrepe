@@ -66,3 +66,10 @@ html{scroll-behavior:smooth}.topbar nav a{display:inline-flex;align-items:center
 .counter{display:inline-block;min-width:3.15ch;font-variant-numeric:tabular-nums;will-change:transform,filter}.counter.counting{animation:counter-roll .16s ease-in-out infinite alternate}@keyframes counter-roll{from{transform:translateY(.035em);filter:blur(.35px)}to{transform:translateY(-.015em);filter:blur(0)}}@media(prefers-reduced-motion:reduce){.counter.counting{animation:none}}
 
 @media(prefers-reduced-motion:reduce){.quote-whatsapp,.quote-arrow{transition:none}}
+/* Ajustes de enquadramento individuais da galeria */
+.coverflow img[src$="gallery-drive-02.jpg"]{object-position:center 60%}
+.coverflow img[src$="gallery-drive-07.jpg"]{object-position:center 58%}
+.coverflow img[src$="gallery-drive-08.jpg"]{object-position:center 45%}
+.coverflow img[src$="gallery-drive-09.jpg"]{object-position:center 52%}
+.coverflow img[src$="gallery-drive-10.jpg"]{object-position:center 48%}
+.coverflow img[src$="gallery-drive-16.jpg"]{object-position:center 55%}
