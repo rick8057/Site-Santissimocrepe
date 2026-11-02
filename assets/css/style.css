@@ -67,9 +67,9 @@ html{scroll-behavior:smooth}.topbar nav a{display:inline-flex;align-items:center
 
 @media(prefers-reduced-motion:reduce){.quote-whatsapp,.quote-arrow{transition:none}}
 /* Ajustes de enquadramento individuais da galeria */
-.coverflow img[src$="gallery-drive-02.jpg"],
 .coverflow img[src$="gallery-drive-07.jpg"],
 .coverflow img[src$="gallery-drive-08.jpg"],
 .coverflow img[src$="gallery-drive-09.jpg"],
 .coverflow img[src$="gallery-drive-10.jpg"],
-.coverflow img[src$="gallery-drive-16.jpg"]{object-fit:contain;background:#3f1c0e}
+.coverflow img[src$="gallery-drive-16.jpg"],
+.coverflow img[src$="gallery-drive-18.jpg"]{object-fit:contain;background:#3f1c0e}
